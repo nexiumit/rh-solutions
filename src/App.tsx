@@ -18,7 +18,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
-      <BrowserRouter>
+      <BrowserRouter basename="/rh-solutions">
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">
