@@ -23,7 +23,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/assets/logo-rh-solutions.png" 
+              src="${import.meta.env.BASE_URL}assets/logo-rh-solutions.png" 
               alt="RH Solutions" 
               className="h-10 w-auto"
             />

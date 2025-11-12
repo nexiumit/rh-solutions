@@ -68,7 +68,7 @@ export default function Contact() {
 
             <div className="aspect-video overflow-hidden rounded-lg">
               <img 
-                src="/assets/contact-illustration.jpg" 
+                src="${import.meta.env.BASE_URL}assets/contact-illustration.jpg" 
                 alt="Contact RH Solutions" 
                 className="w-full h-full object-cover"
               />

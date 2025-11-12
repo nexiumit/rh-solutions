@@ -9,31 +9,31 @@ export default function Index() {
       icon: Users,
       title: 'Recrutement',
       description: 'Sourcing, sélection et intégration de vos futurs talents',
-      image: '/assets/service-recruitment.jpg',
+      image: '${import.meta.env.BASE_URL}assets/service-recruitment.jpg',
     },
     {
       icon: FileText,
       title: 'Gestion de paie',
       description: 'Externalisation complète de votre paie et déclarations sociales',
-      image: '/assets/service-payroll.jpg',
+      image: '${import.meta.env.BASE_URL}assets/service-payroll.jpg',
     },
     {
       icon: GraduationCap,
       title: 'Formation managers',
       description: 'Développement des compétences managériales de vos équipes',
-      image: '/assets/service-training.jpg',
+      image: '${import.meta.env.BASE_URL}assets/service-training.jpg',
     },
     {
       icon: Scale,
       title: 'Conseil juridique',
       description: 'Accompagnement en droit du travail et conformité',
-      image: '/assets/service-legal.jpg',
+      image: '${import.meta.env.BASE_URL}assets/service-legal.jpg',
     },
     {
       icon: Workflow,
       title: 'Digitalisation RH',
       description: 'Optimisation de vos processus RH avec des outils modernes',
-      image: '/assets/service-digital.jpg',
+      image: '${import.meta.env.BASE_URL}assets/service-digital.jpg',
     },
   ];
 
@@ -75,7 +75,7 @@ export default function Index() {
             </div>
             <div className="animate-in fade-in slide-in-from-right duration-700 delay-300">
               <img 
-                src="/assets/hero-team-collaboration.jpg" 
+                src="${import.meta.env.BASE_URL}assets/hero-team-collaboration.jpg" 
                 alt="Équipe RH Solutions" 
                 className="rounded-lg shadow-2xl"
               />

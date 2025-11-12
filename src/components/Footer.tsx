@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <img 
-                src="/assets/logo-rh-solutions_variant_1.png" 
+                src="${import.meta.env.BASE_URL}assets/logo-rh-solutions_variant_1.png" 
                 alt="RH Solutions" 
                 className="h-8 w-auto brightness-0 invert"
               />

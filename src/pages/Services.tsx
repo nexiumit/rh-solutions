@@ -13,7 +13,7 @@ export default function Services() {
         'Garantie de remplacement',
       ],
       icon: Users,
-      image: '/assets/service-recruitment_variant_1.jpg',
+      image: '${import.meta.env.BASE_URL}assets/service-recruitment_variant_1.jpg',
     },
     {
       title: 'Gestion de paie',
@@ -25,7 +25,7 @@ export default function Services() {
         'Support dédié et réactivité',
       ],
       icon: FileText,
-      image: '/assets/service-payroll_variant_1.jpg',
+      image: '${import.meta.env.BASE_URL}assets/service-payroll_variant_1.jpg',
     },
     {
       title: 'Formation des managers',
@@ -37,7 +37,7 @@ export default function Services() {
         'Suivi et évaluation des compétences',
       ],
       icon: GraduationCap,
-      image: '/assets/service-training_variant_1.jpg',
+      image: '${import.meta.env.BASE_URL}assets/service-training_variant_1.jpg',
     },
     {
       title: 'Conseil en droit du travail',
@@ -49,7 +49,7 @@ export default function Services() {
         'Veille réglementaire permanente',
       ],
       icon: Scale,
-      image: '/assets/service-legal_variant_1.jpg',
+      image: '${import.meta.env.BASE_URL}assets/service-legal_variant_1.jpg',
     },
     {
       title: 'Digitalisation des processus RH',
@@ -61,7 +61,7 @@ export default function Services() {
         'Formation et accompagnement au changement',
       ],
       icon: Workflow,
-      image: '/assets/service-digital_variant_1.jpg',
+      image: '${import.meta.env.BASE_URL}assets/service-digital_variant_1.jpg',
     },
   ];
 
