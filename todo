@@ -1,0 +1,69 @@
+# Plan de développement - Site RH Solutions
+
+## Vue d'ensemble
+Site web professionnel pour RH Solutions, spécialisée dans l'externalisation des services RH pour TPE/PME et startups.
+
+## Architecture du site
+1. **Page d'accueil** (`src/pages/Index.tsx`)
+   - Hero section avec présentation
+   - Aperçu des 5 services principaux
+   - Appels à l'action
+
+2. **Page Services** (`src/pages/Services.tsx`)
+   - Détail de chaque service avec icônes
+   - Bénéfices clients
+   - CTAs pour devis
+
+3. **Page Blog/Ressources** (`src/pages/Blog.tsx`)
+   - Liste d'articles
+   - Système de tags
+   - Recherche simple
+
+4. **Page Contact** (`src/pages/Contact.tsx`)
+   - Formulaire de contact (Formspree)
+   - Coordonnées
+   - Carte Google Maps
+
+5. **Pages légales**
+   - Mentions légales (`src/pages/Legal.tsx`)
+   - Politique de confidentialité (`src/pages/Privacy.tsx`)
+
+## Composants à créer
+- `src/components/Header.tsx` - Navigation principale
+- `src/components/Footer.tsx` - Footer avec liens
+- `src/components/ServiceCard.tsx` - Carte de service
+- `src/components/BlogCard.tsx` - Carte d'article
+- `src/components/ContactForm.tsx` - Formulaire de contact
+
+## Fichiers de configuration
+- `index.html` - Mise à jour du titre et meta
+- `src/App.tsx` - Configuration des routes
+- `src/index.css` - Styles globaux personnalisés
+- `vite.config.ts` - Configuration pour build statique
+- `.github/workflows/deploy.yml` - GitHub Actions pour déploiement
+- `README.md` - Guide de déploiement GitHub Pages
+
+## Palette de couleurs
+- Bleu principal: #2563eb (blue-600)
+- Bleu foncé: #1e40af (blue-800)
+- Gris: #64748b (slate-500)
+- Gris clair: #f1f5f9 (slate-100)
+
+## Images générées
+✅ logo-rh-solutions.png
+✅ hero-team-collaboration.jpg
+✅ service-recruitment.jpg
+✅ service-payroll.jpg
+✅ service-training.jpg
+✅ service-legal.jpg
+✅ service-digital.jpg
+✅ contact-illustration.jpg
+
+## Ordre d'implémentation
+1. Configuration de base (App.tsx, index.html)
+2. Composants communs (Header, Footer)
+3. Pages principales (Index, Services, Blog, Contact)
+4. Pages légales
+5. Styles globaux
+6. Configuration GitHub Pages
+7. Documentation
