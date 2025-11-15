@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, Linkedin, Facebook, Twitter } from 'lucide-react';
+import { FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
+import { MdEmail, MdPhone } from 'react-icons/md';
+import logoVariant from '/assets/logo-rh-solutions_variant_1.png';
 
 export default function Footer() {
   return (
@@ -10,7 +12,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <img 
-                src="${import.meta.env.BASE_URL}assets/logo-rh-solutions_variant_1.png" 
+                src={logoVariant}
                 alt="RH Solutions" 
                 className="h-8 w-auto brightness-0 invert"
               />
@@ -21,13 +23,13 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                <Linkedin className="h-5 w-5" />
+                <FaLinkedin className="h-5 w-5" />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                <Facebook className="h-5 w-5" />
+                <FaFacebook className="h-5 w-5" />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                <Twitter className="h-5 w-5" />
+                <FaTwitter className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -76,11 +78,11 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-2 text-sm">
-                <Phone className="h-4 w-4" />
+                <MdPhone className="h-4 w-4" />
                 <span>+33 1 23 45 67 89</span>
               </li>
               <li className="flex items-center space-x-2 text-sm">
-                <Mail className="h-4 w-4" />
+                <MdEmail className="h-4 w-4" />
                 <span>contact@rh-solutions.fr</span>
               </li>
             </ul>

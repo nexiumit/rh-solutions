@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '/assets/logo-rh-solutions.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="${import.meta.env.BASE_URL}assets/logo-rh-solutions.png" 
+              src={logo}
               alt="RH Solutions" 
               className="h-10 w-auto"
             />
@@ -57,9 +58,9 @@ export default function Header() {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-slate-700" />
+              <FaTimes className="h-6 w-6 text-slate-700" />
             ) : (
-              <Menu className="h-6 w-6 text-slate-700" />
+              <FaBars className="h-6 w-6 text-slate-700" />
             )}
           </button>
         </div>

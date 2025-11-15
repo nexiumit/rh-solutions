@@ -1,5 +1,10 @@
 import ServiceCard from '@/components/ServiceCard';
-import { Users, FileText, GraduationCap, Scale, Workflow } from 'lucide-react';
+import { FaUsers, FaFileAlt, FaGraduationCap, FaBalanceScale, FaProjectDiagram } from 'react-icons/fa';
+import serviceRecruitmentVariant from '/assets/service-recruitment_variant_1.jpg';
+import servicePayrollVariant from '/assets/service-payroll_variant_1.jpg';
+import serviceTrainingVariant from '/assets/service-training_variant_1.jpg';
+import serviceLegalVariant from '/assets/service-legal_variant_1.jpg';
+import serviceDigitalVariant from '/assets/service-digital_variant_1.jpg';
 
 export default function Services() {
   const services = [
@@ -12,8 +17,8 @@ export default function Services() {
         'Accompagnement à l\'intégration',
         'Garantie de remplacement',
       ],
-      icon: Users,
-      image: '${import.meta.env.BASE_URL}assets/service-recruitment_variant_1.jpg',
+      icon: FaUsers,
+      image: serviceRecruitmentVariant,
     },
     {
       title: 'Gestion de paie',
@@ -24,8 +29,8 @@ export default function Services() {
         'Veille juridique et mise à jour',
         'Support dédié et réactivité',
       ],
-      icon: FileText,
-      image: '${import.meta.env.BASE_URL}assets/service-payroll_variant_1.jpg',
+      icon: FaFileAlt,
+      image: servicePayrollVariant,
     },
     {
       title: 'Formation des managers',
@@ -36,8 +41,8 @@ export default function Services() {
         'Formats flexibles (présentiel/distanciel)',
         'Suivi et évaluation des compétences',
       ],
-      icon: GraduationCap,
-      image: '${import.meta.env.BASE_URL}assets/service-training_variant_1.jpg',
+      icon: FaGraduationCap,
+      image: serviceTrainingVariant,
     },
     {
       title: 'Conseil en droit du travail',
@@ -48,8 +53,8 @@ export default function Services() {
         'Audit de conformité légale',
         'Veille réglementaire permanente',
       ],
-      icon: Scale,
-      image: '${import.meta.env.BASE_URL}assets/service-legal_variant_1.jpg',
+      icon: FaBalanceScale,
+      image: serviceLegalVariant,
     },
     {
       title: 'Digitalisation des processus RH',
@@ -60,8 +65,8 @@ export default function Services() {
         'Automatisation des processus',
         'Formation et accompagnement au changement',
       ],
-      icon: Workflow,
-      image: '${import.meta.env.BASE_URL}assets/service-digital_variant_1.jpg',
+      icon: FaProjectDiagram,
+      image: serviceDigitalVariant,
     },
   ];
 

@@ -1,13 +1,14 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, LucideIcon } from 'lucide-react';
+import { FaArrowRight } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 import { Link } from 'react-router-dom';
 
 interface ServiceCardProps {
   title: string;
   description: string;
   benefits: string[];
-  icon: LucideIcon;
+  icon: IconType;
   image: string;
 }
 
@@ -50,7 +51,7 @@ export default function ServiceCard({ title, description, benefits, icon: Icon, 
           </Link>
           <Button variant="outline" className="flex items-center">
             En savoir plus
-            <ArrowRight className="ml-2 h-4 w-4" />
+            <FaArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
       </CardContent>

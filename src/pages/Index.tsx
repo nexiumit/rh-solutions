@@ -1,39 +1,45 @@
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
-import { Users, FileText, GraduationCap, Scale, Workflow, ArrowRight, CheckCircle } from 'lucide-react';
+import { FaUsers, FaFileAlt, FaGraduationCap, FaBalanceScale, FaProjectDiagram, FaArrowRight, FaCheckCircle } from 'react-icons/fa';
+import heroImage from '/assets/hero-team-collaboration.jpg';
+import serviceRecruitment from '/assets/service-recruitment.jpg';
+import servicePayroll from '/assets/service-payroll.jpg';
+import serviceTraining from '/assets/service-training.jpg';
+import serviceLegal from '/assets/service-legal.jpg';
+import serviceDigital from '/assets/service-digital.jpg';
 
 export default function Index() {
   const services = [
     {
-      icon: Users,
+      icon: FaUsers,
       title: 'Recrutement',
       description: 'Sourcing, sélection et intégration de vos futurs talents',
-      image: '${import.meta.env.BASE_URL}assets/service-recruitment.jpg',
+      image: serviceRecruitment,
     },
     {
-      icon: FileText,
+      icon: FaFileAlt,
       title: 'Gestion de paie',
       description: 'Externalisation complète de votre paie et déclarations sociales',
-      image: '${import.meta.env.BASE_URL}assets/service-payroll.jpg',
+      image: servicePayroll,
     },
     {
-      icon: GraduationCap,
+      icon: FaGraduationCap,
       title: 'Formation managers',
       description: 'Développement des compétences managériales de vos équipes',
-      image: '${import.meta.env.BASE_URL}assets/service-training.jpg',
+      image: serviceTraining,
     },
     {
-      icon: Scale,
+      icon: FaBalanceScale,
       title: 'Conseil juridique',
       description: 'Accompagnement en droit du travail et conformité',
-      image: '${import.meta.env.BASE_URL}assets/service-legal.jpg',
+      image: serviceLegal,
     },
     {
-      icon: Workflow,
+      icon: FaProjectDiagram,
       title: 'Digitalisation RH',
       description: 'Optimisation de vos processus RH avec des outils modernes',
-      image: '${import.meta.env.BASE_URL}assets/service-digital.jpg',
+      image: serviceDigital,
     },
   ];
 
@@ -63,7 +69,7 @@ export default function Index() {
                 <Link to="/contact">
                   <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
                     Demander un devis gratuit
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <FaArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
                 <Link to="/services">
@@ -75,7 +81,7 @@ export default function Index() {
             </div>
             <div className="animate-in fade-in slide-in-from-right duration-700 delay-300">
               <img 
-                src="${import.meta.env.BASE_URL}assets/hero-team-collaboration.jpg" 
+                src={heroImage}
                 alt="Équipe RH Solutions" 
                 className="rounded-lg shadow-2xl"
               />
@@ -101,7 +107,7 @@ export default function Index() {
                 key={index} 
                 className="flex items-start space-x-3 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
               >
-                <CheckCircle className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+                <FaCheckCircle className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
                 <p className="text-slate-700">{benefit}</p>
               </div>
             ))}
@@ -151,7 +157,7 @@ export default function Index() {
             <Link to="/services">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                 Voir tous nos services
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <FaArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
@@ -170,7 +176,7 @@ export default function Index() {
           <Link to="/contact">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
               Demander un audit gratuit
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <FaArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
         </div>

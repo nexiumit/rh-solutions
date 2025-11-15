@@ -1,6 +1,7 @@
 import ContactForm from '@/components/ContactForm';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { MdEmail, MdPhone, MdLocationOn, MdAccessTime } from 'react-icons/md';
+import contactIllustration from '/assets/contact-illustration.jpg';
 
 export default function Contact() {
   return (
@@ -28,7 +29,7 @@ export default function Contact() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <Phone className="h-5 w-5 text-blue-600 mt-1" />
+                  <MdPhone className="h-5 w-5 text-blue-600 mt-1" />
                   <div>
                     <p className="font-semibold text-slate-900">Téléphone</p>
                     <p className="text-slate-600">+33 1 23 45 67 89</p>
@@ -36,7 +37,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <Mail className="h-5 w-5 text-blue-600 mt-1" />
+                  <MdEmail className="h-5 w-5 text-blue-600 mt-1" />
                   <div>
                     <p className="font-semibold text-slate-900">Email</p>
                     <p className="text-slate-600">contact@rh-solutions.fr</p>
@@ -44,7 +45,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <MapPin className="h-5 w-5 text-blue-600 mt-1" />
+                  <MdLocationOn className="h-5 w-5 text-blue-600 mt-1" />
                   <div>
                     <p className="font-semibold text-slate-900">Adresse</p>
                     <p className="text-slate-600">
@@ -54,7 +55,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <Clock className="h-5 w-5 text-blue-600 mt-1" />
+                  <MdAccessTime className="h-5 w-5 text-blue-600 mt-1" />
                   <div>
                     <p className="font-semibold text-slate-900">Horaires</p>
                     <p className="text-slate-600">
@@ -68,7 +69,7 @@ export default function Contact() {
 
             <div className="aspect-video overflow-hidden rounded-lg">
               <img 
-                src="${import.meta.env.BASE_URL}assets/contact-illustration.jpg" 
+                src={contactIllustration}
                 alt="Contact RH Solutions" 
                 className="w-full h-full object-cover"
               />
